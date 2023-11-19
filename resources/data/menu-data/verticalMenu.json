@@ -1,0 +1,61 @@
+{
+  "menu": [
+      {
+          "url": "/",
+          "name": "Home",
+          "icon": "home",
+          "slug": "home"
+      },
+      {
+          "navheader": "Settings"
+      },
+      {
+          "url": "users",
+          "name": "Users",
+          "icon": "user",
+          "slug": "users.index",
+          "permission": "view users"
+      },
+      {
+          "name": "Roles & Permissions",
+          "icon": "shield",
+          "slug": "",
+          "badge": "",
+          "badgeClass": "badge rounded-pill ms-auto me-1",
+          "permission": [
+              "edit permissions",
+              "crud roles"
+          ],
+          "submenu": [
+              {
+                  "url": "permissions",
+            "name": "Permissions by Roles",
+            "icon": "circle",
+            "slug": "permissions.index",
+            "permission" : "edit permissions"
+        },
+        {
+          "url": "permissions/by-user",
+          "name": "Permissions by Users",
+          "icon": "circle",
+          "slug": "permissions.by_user",
+          "permission" : "edit permissions"
+        },
+        {
+          "url": "roles",
+          "name": "Roles",
+          "icon": "circle",
+          "slug": "roles.index",
+          "permission" : "crud roles"
+        }
+      ]
+    },
+    {
+      "url": "logs",
+      "name": "Logs",
+      "icon": "info",
+      "slug": "logs.index",
+      "permission" : "view logs"
+    }
+  ]
+}
